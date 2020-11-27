@@ -11,10 +11,11 @@ import {
   Title,
 } from "./Shop.elements";
 import { paintings } from "./Data";
-import _ from 'lodash'
+import _ from "lodash";
 
 function Shop() {
   const paints = _.shuffle(paintings);
+
   return (
     <>
       <Container>
@@ -29,7 +30,7 @@ function Shop() {
                   <Title>{painting.title}</Title>
                   <Artist>{painting.artist}</Artist>
                 </ArtDescription>
-                <Price>${painting.price}</Price>
+                <Price>${painting.price.toLocaleString("en-US")}</Price>
               </ArtDetails>
             </ArtWork>
           );

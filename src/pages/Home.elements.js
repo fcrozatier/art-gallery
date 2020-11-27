@@ -7,4 +7,6 @@ export const Container = styled.div`
 `;
 
 export const MainArtWork = styled.img`
+  max-width: 90%;
+  object-fit: contain;
 `;

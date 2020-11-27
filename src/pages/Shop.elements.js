@@ -15,14 +15,14 @@ export const Container = styled.main`
 `;
 
 export const ArtWork = styled.div`
+  display: grid;
   height: 500px;
   width: 500px;
   padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 2px;
-  transition: all 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  display: grid;
 
   &:hover {
     transform: scale(1.01);
@@ -41,8 +41,8 @@ export const ImgWrapper = styled.div`
 export const ArtImg = styled.img`
   min-width: 100%;
   height: 100%;
-  /* aspect-ratio: 1; */
   object-fit: cover;
+  object-position: center center;
 `;
 
 export const ArtDetails = styled.div`
@@ -53,11 +53,11 @@ export const ArtDetails = styled.div`
 `;
 
 export const ArtDescription = styled.div`
-  /* display: grid; */
 `;
 
 export const Title = styled.h2`
   font-size: 30px;
+  margin-bottom: 2px;
   color: rgba(0, 0, 0, 0.9);
 `;
 
@@ -67,6 +67,7 @@ export const Artist = styled.small`
 `;
 
 export const Price = styled.p`
+  margin-left: 20px;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.9);
 `;
