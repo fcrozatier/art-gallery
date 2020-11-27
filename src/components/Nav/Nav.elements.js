@@ -8,9 +8,9 @@ export const NavBar = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background: #000;
+  background: rgba(0,0,0,0.9);
   color: #fff;
-  padding: 0 max(50px, calc((100vw - 1000px) / 2));
+  padding: 0 100px;
 `;
 
 export const NavIcon = styled(Link)`
@@ -19,6 +19,12 @@ export const NavIcon = styled(Link)`
   font-size: 36px;
   color: #fff;
 `;
+
+export const NavLinks = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`
 
 export const NavLink = styled(Link)`
   text-decoration: none;

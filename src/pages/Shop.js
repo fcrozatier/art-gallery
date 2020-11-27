@@ -1,11 +1,42 @@
-import React from 'react'
+import React from "react";
+import {
+  ArtDescription,
+  ArtDetails,
+  ArtImg,
+  Artist,
+  ArtWork,
+  Container,
+  ImgWrapper,
+  Price,
+  Title,
+} from "./Shop.elements";
+import { paintings } from "./Data";
+import _ from 'lodash'
 
 function Shop() {
+  const paints = _.shuffle(paintings);
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90vh"}}>
-      Shop
-    </div>
-  )
+    <>
+      <Container>
+        {paints.map((painting) => {
+          return (
+            <ArtWork key={painting.id}>
+              <ImgWrapper>
+                <ArtImg src={painting.img} alt="artwork" />
+              </ImgWrapper>
+              <ArtDetails>
+                <ArtDescription>
+                  <Title>{painting.title}</Title>
+                  <Artist>{painting.artist}</Artist>
+                </ArtDescription>
+                <Price>${painting.price}</Price>
+              </ArtDetails>
+            </ArtWork>
+          );
+        })}
+      </Container>
+    </>
+  );
 }
 
-export default Shop
+export default Shop;

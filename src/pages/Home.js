@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+import {
+  Container,
+} from "./Home.elements";
 
 function Home() {
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90vh"}}>
-      Home
-    </div>
-  )
+    <>
+      <Container>
+          <img src={require("../images/main.jpg").default} alt="showcase" />
+      </Container>
+    </>
+  );
 }
 
-export default Home
+export default Home;
