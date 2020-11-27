@@ -25,7 +25,9 @@ export const NavLink = styled(Link)`
   color: #fff;
 `;
 
-export const NavBtn = styled.div`
+export const NavBtn = styled(Link)`
+  text-decoration:none;
+  color: #fff;
   display: flex;
   align-items: center;
   gap: 5px;

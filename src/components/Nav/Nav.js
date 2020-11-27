@@ -6,7 +6,7 @@ function Nav() {
     <>
       <NavBar>
         <NavIcon to="/">ArtGallery</NavIcon>
-        <NavLink to="/">Shop</NavLink>
+        <NavLink to="/shop">Shop</NavLink>
         <NavBtn to="/cart">
           <ShoppingCart />0
         </NavBtn>
