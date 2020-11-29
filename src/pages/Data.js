@@ -153,7 +153,7 @@ export const paintings = [
     img: require("../images/ruby.jpg").default,
   },
   {
-    id: 16,
+    id: 18,
     title: "The Rip",
     artist: "Gorkem Dikel",
     price: 3475,
@@ -162,7 +162,7 @@ export const paintings = [
     img: require("../images/rip.jpg").default,
   },
   {
-    id: 17,
+    id: 19,
     title: "Mirage at Sea",
     artist: "Changsoon Oh",
     price: 11750,
@@ -171,7 +171,7 @@ export const paintings = [
     img: require("../images/mirageatsea.jpg").default,
   },
   {
-    id: 18,
+    id: 20,
     title: "Beach at Night",
     artist: "Changsoon Oh",
     price: 3510,
@@ -180,7 +180,7 @@ export const paintings = [
     img: require("../images/beachatnight.jpg").default,
   },
   {
-    id: 19,
+    id: 21,
     title: "Evening Glow",
     artist: "Céline van Hanja",
     price: 4270,
@@ -189,7 +189,7 @@ export const paintings = [
     img: require("../images/enevingglow.jpg").default,
   },
   {
-    id: 20,
+    id: 22,
     title: "Luminous Bay",
     artist: "Céline van Hanja",
     price: 2310,
@@ -198,7 +198,7 @@ export const paintings = [
     img: require("../images/luminousbay.jpg").default,
   },
   {
-    id: 21,
+    id: 23,
     title: "Flowers for Hawthorne",
     artist: "Sarah Giannobile",
     price: 1346,
@@ -207,7 +207,7 @@ export const paintings = [
     img: require("../images/flowers.jpg").default,
   },
   {
-    id: 22,
+    id: 24,
     title: "Landscape for Hawthorne",
     artist: "Sarah Giannobile",
     price: 1346,

@@ -8,6 +8,10 @@ export const Container = styled.main`
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: 50px;
 
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
   @media screen and (max-width: 768px) {
     padding: 30px 0;
     grid-template-columns: 1fr;
@@ -17,7 +21,6 @@ export const Container = styled.main`
 export const ArtWork = styled.div`
   display: grid;
   height: 500px;
-  width: 500px;
   padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 2px;
@@ -27,10 +30,6 @@ export const ArtWork = styled.div`
   &:hover {
     transform: scale(1.01);
     cursor: pointer;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 90%;
   }
 `;
 
@@ -52,8 +51,7 @@ export const ArtDetails = styled.div`
   padding-top: 20px;
 `;
 
-export const ArtDescription = styled.div`
-`;
+export const ArtDescription = styled.div``;
 
 export const Title = styled.h2`
   font-size: 30px;
