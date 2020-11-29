@@ -1,5 +1,5 @@
 import { NavLink as Link } from "react-router-dom";
-import { CgShoppingCart } from "react-icons/cg";
+import { BsBag } from "react-icons/bs";
 
 import styled from "styled-components/macro";
 
@@ -28,14 +28,14 @@ export const NavIcon = styled(Link)`
   color: #fff;
 
   @media screen and (max-width: 768px){
-    font-size: 28px;
+    font-size: 26px;
   }
 `;
 
 export const NavLinks = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 `
 
 export const NavLink = styled(Link)`
@@ -53,6 +53,8 @@ export const NavBtn = styled(Link)`
   font-size: 20px;
 `;
 
-export const ShoppingCart = styled(CgShoppingCart)`
-  font-size: 22px;
+export const ShoppingCart = styled(BsBag)`
+  font-size: 30px;
+  position: relative;
+  top: -2px;
 `

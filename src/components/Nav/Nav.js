@@ -1,4 +1,11 @@
-import { NavBar, NavBtn, NavIcon, NavLink, NavLinks, ShoppingCart } from "./Nav.elements";
+import {
+  NavBar,
+  NavBtn,
+  NavIcon,
+  NavLink,
+  NavLinks,
+  ShoppingCart,
+} from "./Nav.elements";
 
 function Nav() {
   return (
