@@ -1,4 +1,3 @@
-import React from "react";
 import { NavBar, NavBtn, NavIcon, NavLink, NavLinks, ShoppingCart } from "./Nav.elements";
 
 function Nav() {
