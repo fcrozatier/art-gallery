@@ -4,6 +4,10 @@ import { CgShoppingCart } from "react-icons/cg";
 import styled from "styled-components/macro";
 
 export const NavBar = styled.nav`
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
