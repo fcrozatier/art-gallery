@@ -5,7 +5,7 @@ import {
   NavLink,
   NavLinks,
   ShoppingCart,
-} from "./Nav.elements";
+} from './Nav.elements';
 
 function Nav() {
   return (
@@ -15,7 +15,8 @@ function Nav() {
         <NavLinks>
           <NavLink to="/shop">Shop</NavLink>
           <NavBtn to="/cart">
-            <ShoppingCart />0
+            <ShoppingCart />
+            0
           </NavBtn>
         </NavLinks>
       </NavBar>

@@ -1,7 +1,7 @@
-import { NavLink as Link } from "react-router-dom";
-import { BsBag } from "react-icons/bs";
+import { NavLink as Link } from 'react-router-dom';
+import { BsBag } from 'react-icons/bs';
 
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro';
 
 export const NavBar = styled.nav`
   position: sticky;
@@ -36,7 +36,7 @@ export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   gap: 25px;
-`
+`;
 
 export const NavLink = styled(Link)`
   text-decoration: none;
@@ -57,4 +57,4 @@ export const ShoppingCart = styled(BsBag)`
   font-size: 30px;
   position: relative;
   top: -2px;
-`
+`;

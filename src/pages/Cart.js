@@ -1,9 +1,12 @@
 function Cart() {
   return (
-    <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "90vh"}}>
+    <div style={{
+      display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh',
+    }}
+    >
       Cart
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;

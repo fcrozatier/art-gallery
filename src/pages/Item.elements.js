@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components/macro";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ export const DisplayImg = styled.img`
   flex-shrink: 1;
   max-width: 50%;
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     max-width: 100%;
   }
 `;
@@ -29,10 +29,6 @@ export const DescriptionWrapper = styled.div`
   align-items: center;
   text-align: center;
   padding: 50px;
-
-  /* border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.2); */
 `;
 
 export const Title = styled.h1`
