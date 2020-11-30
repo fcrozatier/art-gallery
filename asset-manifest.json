@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.45981619.chunk.css",
-    "main.js": "./static/js/main.5406e8be.chunk.js",
-    "main.js.map": "./static/js/main.5406e8be.chunk.js.map",
+    "main.js": "./static/js/main.ed0446d4.chunk.js",
+    "main.js.map": "./static/js/main.ed0446d4.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.985392a2.js",
     "runtime-main.js.map": "./static/js/runtime-main.985392a2.js.map",
-    "static/js/2.625cfe64.chunk.js": "./static/js/2.625cfe64.chunk.js",
-    "static/js/2.625cfe64.chunk.js.map": "./static/js/2.625cfe64.chunk.js.map",
+    "static/js/2.1b109fe6.chunk.js": "./static/js/2.1b109fe6.chunk.js",
+    "static/js/2.1b109fe6.chunk.js.map": "./static/js/2.1b109fe6.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.45981619.chunk.css.map": "./static/css/main.45981619.chunk.css.map",
-    "static/js/2.625cfe64.chunk.js.LICENSE.txt": "./static/js/2.625cfe64.chunk.js.LICENSE.txt",
+    "static/js/2.1b109fe6.chunk.js.LICENSE.txt": "./static/js/2.1b109fe6.chunk.js.LICENSE.txt",
     "static/media/beachatnight.jpg": "./static/media/beachatnight.35854d78.jpg",
     "static/media/bluezone.jpg": "./static/media/bluezone.2230ad86.jpg",
     "static/media/enevingglow.jpg": "./static/media/enevingglow.0d4a5b50.jpg",
@@ -38,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.985392a2.js",
-    "static/js/2.625cfe64.chunk.js",
+    "static/js/2.1b109fe6.chunk.js",
     "static/css/main.45981619.chunk.css",
-    "static/js/main.5406e8be.chunk.js"
+    "static/js/main.ed0446d4.chunk.js"
   ]
 }
