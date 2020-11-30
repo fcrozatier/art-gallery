@@ -9,6 +9,8 @@ import Shop from './pages/Shop';
 import paintings from './Data';
 
 function App() {
+  const cart = [paintings[0], paintings[1]];
+
   return (
     <>
       <Router>
@@ -18,7 +20,9 @@ function App() {
           <Route path="/shop" exact>
             <Shop paintings={paintings} />
           </Route>
-          <Route path="/cart" exact component={Cart} />
+          <Route path="/cart" exact>
+            <Cart cart={cart} />
+          </Route>
           <Route path="/:id" exact component={Item} />
         </Switch>
       </Router>

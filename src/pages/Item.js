@@ -18,25 +18,23 @@ function Item({ location }) {
   } = location.state;
 
   return (
-    <>
-      <Container>
-        <DisplayImg src={img} />
-        <DescriptionWrapper>
-          <Title>{title}</Title>
-          <Artist>{artist}</Artist>
-          <Description>{description}</Description>
-          <Price>
-            $
-            {price.toLocaleString('en-US')}
-          </Price>
-          <Btn>Add to cart</Btn>
-          <MyLink to="/shop">
-            <IoIosArrowBack />
-            Go back
-          </MyLink>
-        </DescriptionWrapper>
-      </Container>
-    </>
+    <Container>
+      <DisplayImg src={img} />
+      <DescriptionWrapper>
+        <Title>{title}</Title>
+        <Artist>{artist}</Artist>
+        <Description>{description}</Description>
+        <Price>
+          $
+          {price.toLocaleString('en-US')}
+        </Price>
+        <Btn>Add to cart</Btn>
+        <MyLink to="/shop">
+          <IoIosArrowBack />
+          Go back
+        </MyLink>
+      </DescriptionWrapper>
+    </Container>
   );
 }
 

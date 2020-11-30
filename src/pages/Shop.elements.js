@@ -6,7 +6,9 @@ export const Container = styled.main`
   gap: 30px;
   justify-content: center;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(
+          ${({ small }) => (small ? 'auto-fill' : 'auto-fit')},
+          minmax(${({ small }) => (small ? '400px' : '500px')}, 1fr));
   padding: 50px;
 
   @media screen and (max-width: 1024px) {
@@ -23,6 +25,7 @@ export const ArtWork = styled(Link)`
   text-decoration: none;
   display: grid;
   height: 500px;
+  width: ${({ small }) => (small ? '400px' : 'auto')};
   padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 2px;
