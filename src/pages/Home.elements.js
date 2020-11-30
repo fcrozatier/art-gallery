@@ -16,16 +16,11 @@ export const MainArtWork = styled.img`
   object-position: center center;
 `;
 
-export const BtnContainer = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-`
-
 export const Btn = styled(Link)`
-  position: relative;
-  top: -50%;
-  left: -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
   background-color: #000;
   color: white;
   text-decoration: none;
