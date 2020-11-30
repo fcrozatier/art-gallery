@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 import { IoIosArrowBack } from 'react-icons/io';
 import {
   Artist,
@@ -11,18 +12,23 @@ import {
   Title,
 } from './Item.elements';
 
-const img = require('../images/snakecharmer.jpg').default;
+function Item({ location }) {
+  const {
+    title, artist, price, description, img,
+  } = location.state;
 
-function Item() {
   return (
     <>
       <Container>
         <DisplayImg src={img} />
         <DescriptionWrapper>
-          <Title>Snake Charmer</Title>
-          <Artist>Chuck Hipsher</Artist>
-          <Description>My last inspiration</Description>
-          <Price>$7400</Price>
+          <Title>{title}</Title>
+          <Artist>{artist}</Artist>
+          <Description>{description}</Description>
+          <Price>
+            $
+            {price.toLocaleString('en-US')}
+          </Price>
           <Btn>Add to cart</Btn>
           <MyLink to="/shop">
             <IoIosArrowBack />
@@ -33,5 +39,10 @@ function Item() {
     </>
   );
 }
+
+Item.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  location: PropTypes.object.isRequired,
+};
 
 export default Item;

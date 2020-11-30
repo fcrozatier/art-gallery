@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Item from './pages/Item';
 import Shop from './pages/Shop';
 
+import paintings from './Data';
+
 function App() {
   return (
     <>
@@ -13,9 +15,11 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/shop" exact component={Shop} />
+          <Route path="/shop" exact>
+            <Shop paintings={paintings} />
+          </Route>
           <Route path="/cart" exact component={Cart} />
-          <Route path="/item" exact component={Item} />
+          <Route path="/:id" exact component={Item} />
         </Switch>
       </Router>
     </>

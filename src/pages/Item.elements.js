@@ -28,11 +28,11 @@ export const DescriptionWrapper = styled.div`
   flex-grow: 1;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: calc(20px + 3vw);
 `;
 
 export const Title = styled.h1`
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 5px;
 `;
 
@@ -44,11 +44,14 @@ export const Artist = styled.h2`
 `;
 
 export const Description = styled.p`
-  font-size: 16px;
-  line-height: 1.1;
+  text-align: justify;
+  text-justify: auto;
+  font-size: 14px;
+  line-height: 22px;
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 30px;
-  max-width: 80%;
+  max-width: 400px;
+  width: 90%;
 `;
 
 export const Medium = styled.small`
@@ -69,6 +72,7 @@ export const Btn = styled.button`
   user-select: none;
   margin-bottom: 30px;
   outline: none;
+  cursor: pointer;
 `;
 
 export const MyLink = styled(Link)`

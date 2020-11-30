@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import PropTypes from 'prop-types';
 import {
   ArtDescription,
   ArtDetails,
@@ -10,16 +11,21 @@ import {
   Price,
   Title,
 } from './Shop.elements';
-import paintings from './Data';
 
-function Shop() {
+function Shop({ paintings }) {
   const paints = _.shuffle(paintings);
 
   return (
     <>
       <Container>
         {paints.map((painting) => (
-          <ArtWork key={painting.id} to="/item">
+          <ArtWork
+            key={painting.id}
+            to={{
+              pathname: `/${painting.id}`,
+              state: painting,
+            }}
+          >
             <ImgWrapper>
               <ArtImg src={painting.img} alt="artwork" />
             </ImgWrapper>
@@ -40,4 +46,8 @@ function Shop() {
   );
 }
 
+Shop.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  paintings: PropTypes.array.isRequired,
+};
 export default Shop;
