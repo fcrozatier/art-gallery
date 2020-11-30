@@ -20,7 +20,7 @@ function Shop() {
       <Container>
         {paints.map((painting) => {
           return (
-            <ArtWork key={painting.id}>
+            <ArtWork key={painting.id} to="/item">
               <ImgWrapper>
                 <ArtImg src={painting.img} alt="artwork" />
               </ImgWrapper>
