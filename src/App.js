@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Item from './pages/Item';
 import Shop from './pages/Shop';
 
-import paintings from './Data';
+const paintings = require('./Data').default;
 
 function App() {
   const cart = [paintings[0], paintings[1]];
