@@ -1,45 +1,20 @@
 {
   "files": {
     "main.css": "./static/css/main.45981619.chunk.css",
-    "main.js": "./static/js/main.ee81f19f.chunk.js",
-    "main.js.map": "./static/js/main.ee81f19f.chunk.js.map",
+    "main.js": "./static/js/main.5374c433.chunk.js",
+    "main.js.map": "./static/js/main.5374c433.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.985392a2.js",
     "runtime-main.js.map": "./static/js/runtime-main.985392a2.js.map",
-    "static/js/2.ce442f0e.chunk.js": "./static/js/2.ce442f0e.chunk.js",
-    "static/js/2.ce442f0e.chunk.js.map": "./static/js/2.ce442f0e.chunk.js.map",
+    "static/js/2.3974047d.chunk.js": "./static/js/2.3974047d.chunk.js",
+    "static/js/2.3974047d.chunk.js.map": "./static/js/2.3974047d.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.45981619.chunk.css.map": "./static/css/main.45981619.chunk.css.map",
-    "static/js/2.ce442f0e.chunk.js.LICENSE.txt": "./static/js/2.ce442f0e.chunk.js.LICENSE.txt",
-    "static/media/beachatnight.jpg": "./static/media/beachatnight.35854d78.jpg",
-    "static/media/bluezone.jpg": "./static/media/bluezone.2230ad86.jpg",
-    "static/media/enevingglow.jpg": "./static/media/enevingglow.0d4a5b50.jpg",
-    "static/media/flowers.jpg": "./static/media/flowers.e95ed14e.jpg",
-    "static/media/fragments.jpg": "./static/media/fragments.334e4f3a.jpg",
-    "static/media/landscape.jpg": "./static/media/landscape.68f9d663.jpg",
-    "static/media/loverofsunsets.jpg": "./static/media/loverofsunsets.a932b960.jpg",
-    "static/media/luminousbay.jpg": "./static/media/luminousbay.f75cd626.jpg",
-    "static/media/main.jpg": "./static/media/main.f854be43.jpg",
-    "static/media/mirageatsea.jpg": "./static/media/mirageatsea.84613f3a.jpg",
-    "static/media/nightswim.jpg": "./static/media/nightswim.ac6b7f0f.jpg",
-    "static/media/nycrhythm.jpg": "./static/media/nycrhythm.2716c214.jpg",
-    "static/media/onemoreyear.jpg": "./static/media/onemoreyear.af80b984.jpg",
-    "static/media/pleasure.jpg": "./static/media/pleasure.8c31e1dc.jpg",
-    "static/media/pythagore.jpg": "./static/media/pythagore.52bac2fa.jpg",
-    "static/media/rebound.jpg": "./static/media/rebound.9f2e31b7.jpg",
-    "static/media/rip.jpg": "./static/media/rip.530b8ed3.jpg",
-    "static/media/rosespainting.jpg": "./static/media/rosespainting.97dd5f66.jpg",
-    "static/media/ruby.jpg": "./static/media/ruby.2a635922.jpg",
-    "static/media/snakecharmer.jpg": "./static/media/snakecharmer.a4eb9342.jpg",
-    "static/media/summerjoy.jpg": "./static/media/summerjoy.d216bd38.jpg",
-    "static/media/summertrip.jpg": "./static/media/summertrip.69d62913.jpg",
-    "static/media/untitled.jpg": "./static/media/untitled.00d57669.jpg",
-    "static/media/untitled1906.jpg": "./static/media/untitled1906.92c041fd.jpg",
-    "static/media/whiteandblue.jpg": "./static/media/whiteandblue.3ed6af0c.jpg"
+    "static/js/2.3974047d.chunk.js.LICENSE.txt": "./static/js/2.3974047d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.985392a2.js",
-    "static/js/2.ce442f0e.chunk.js",
+    "static/js/2.3974047d.chunk.js",
     "static/css/main.45981619.chunk.css",
-    "static/js/main.ee81f19f.chunk.js"
+    "static/js/main.5374c433.chunk.js"
   ]
 }
