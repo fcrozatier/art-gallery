@@ -15,7 +15,7 @@ export const Btn = styled(Link)`
   transform: translate(-50%, -45%);
   z-index: 1;
 
-  background-color: #000;
+  background-color: #252525;
   color: white;
   text-decoration: none;
   padding: 20px;

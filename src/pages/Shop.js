@@ -20,10 +20,10 @@ function Shop({ paintings }) {
       {paints.map((painting) => (
         <ArtWork
           key={painting.id}
-          to={{
-            pathname: `/${painting.id}`,
-            state: painting,
-          }}
+          // to={{
+          //   pathname: `/${painting.id}`,
+          //   state: painting,
+          // }}
         >
           <ImgWrapper>
             <ArtImg src={painting.img} alt="artwork" />

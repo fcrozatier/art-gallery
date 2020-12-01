@@ -1,5 +1,7 @@
 import {
-  Btn, Container, MainArtWork,
+  Btn,
+  Container,
+  MainArtWork,
 } from './Home.elements';
 
 const mainImg = require('../images/main.jpg').default;
