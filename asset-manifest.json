@@ -1,21 +1,45 @@
 {
   "files": {
     "main.css": "/art-gallery/static/css/main.45981619.chunk.css",
-    "main.js": "/art-gallery/static/js/main.194f2b42.chunk.js",
-    "main.js.map": "/art-gallery/static/js/main.194f2b42.chunk.js.map",
+    "main.js": "/art-gallery/static/js/main.6e4594f7.chunk.js",
+    "main.js.map": "/art-gallery/static/js/main.6e4594f7.chunk.js.map",
     "runtime-main.js": "/art-gallery/static/js/runtime-main.57e799f7.js",
     "runtime-main.js.map": "/art-gallery/static/js/runtime-main.57e799f7.js.map",
-    "static/js/2.9f377450.chunk.js": "/art-gallery/static/js/2.9f377450.chunk.js",
-    "static/js/2.9f377450.chunk.js.map": "/art-gallery/static/js/2.9f377450.chunk.js.map",
+    "static/js/2.05dec0e1.chunk.js": "/art-gallery/static/js/2.05dec0e1.chunk.js",
+    "static/js/2.05dec0e1.chunk.js.map": "/art-gallery/static/js/2.05dec0e1.chunk.js.map",
     "index.html": "/art-gallery/index.html",
     "static/css/main.45981619.chunk.css.map": "/art-gallery/static/css/main.45981619.chunk.css.map",
-    "static/js/2.9f377450.chunk.js.LICENSE.txt": "/art-gallery/static/js/2.9f377450.chunk.js.LICENSE.txt",
-    "static/media/main.jpg": "/art-gallery/static/media/main.f854be43.jpg"
+    "static/js/2.05dec0e1.chunk.js.LICENSE.txt": "/art-gallery/static/js/2.05dec0e1.chunk.js.LICENSE.txt",
+    "static/media/beachatnight.jpg": "/art-gallery/static/media/beachatnight.35854d78.jpg",
+    "static/media/bluezone.jpg": "/art-gallery/static/media/bluezone.2230ad86.jpg",
+    "static/media/enevingglow.jpg": "/art-gallery/static/media/enevingglow.0d4a5b50.jpg",
+    "static/media/flowers.jpg": "/art-gallery/static/media/flowers.e95ed14e.jpg",
+    "static/media/fragments.jpg": "/art-gallery/static/media/fragments.334e4f3a.jpg",
+    "static/media/landscape.jpg": "/art-gallery/static/media/landscape.68f9d663.jpg",
+    "static/media/loverofsunsets.jpg": "/art-gallery/static/media/loverofsunsets.a932b960.jpg",
+    "static/media/luminousbay.jpg": "/art-gallery/static/media/luminousbay.f75cd626.jpg",
+    "static/media/main.jpg": "/art-gallery/static/media/main.f854be43.jpg",
+    "static/media/mirageatsea.jpg": "/art-gallery/static/media/mirageatsea.84613f3a.jpg",
+    "static/media/nightswim.jpg": "/art-gallery/static/media/nightswim.ac6b7f0f.jpg",
+    "static/media/nycrhythm.jpg": "/art-gallery/static/media/nycrhythm.2716c214.jpg",
+    "static/media/onemoreyear.jpg": "/art-gallery/static/media/onemoreyear.af80b984.jpg",
+    "static/media/pleasure.jpg": "/art-gallery/static/media/pleasure.8c31e1dc.jpg",
+    "static/media/pythagore.jpg": "/art-gallery/static/media/pythagore.52bac2fa.jpg",
+    "static/media/rebound.jpg": "/art-gallery/static/media/rebound.9f2e31b7.jpg",
+    "static/media/rip.jpg": "/art-gallery/static/media/rip.530b8ed3.jpg",
+    "static/media/rosespainting.jpg": "/art-gallery/static/media/rosespainting.97dd5f66.jpg",
+    "static/media/ruby.jpg": "/art-gallery/static/media/ruby.2a635922.jpg",
+    "static/media/snakecharmer.jpg": "/art-gallery/static/media/snakecharmer.a4eb9342.jpg",
+    "static/media/summerjoy.jpg": "/art-gallery/static/media/summerjoy.d216bd38.jpg",
+    "static/media/summertrip.jpg": "/art-gallery/static/media/summertrip.69d62913.jpg",
+    "static/media/untitled.jpg": "/art-gallery/static/media/untitled.00d57669.jpg",
+    "static/media/untitled1906.jpg": "/art-gallery/static/media/untitled1906.92c041fd.jpg",
+    "static/media/whiteandblue.jpg": "/art-gallery/static/media/whiteandblue.3ed6af0c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.57e799f7.js",
-    "static/js/2.9f377450.chunk.js",
+    "static/js/2.05dec0e1.chunk.js",
     "static/css/main.45981619.chunk.css",
-    "static/js/main.194f2b42.chunk.js"
+    "static/js/main.6e4594f7.chunk.js"
   ]
 }
