@@ -4,7 +4,8 @@ import {
   MainArtWork,
 } from './Home.elements';
 
-const mainImg = require('../images/main.jpg').default;
+import mainImg from '../images/main.jpg';
+// const mainImg = require('../images/main.jpg').default;
 
 function Home() {
   return (

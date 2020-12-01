@@ -1,5 +1,6 @@
 import { PropTypes } from 'prop-types';
 import { IoIosArrowBack } from 'react-icons/io';
+import { useParams } from 'react-router-dom';
 import {
   Artist,
   Btn,
@@ -12,10 +13,12 @@ import {
   Title,
 } from './Item.elements';
 
-function Item({ location }) {
+function Item({ paintings }) {
+  const { id } = useParams();
+  const painting = paintings.filter((paint) => paint.id === +id)[0];
   const {
     title, artist, price, description, img,
-  } = location.state;
+  } = painting;
 
   return (
     <Container>
@@ -40,7 +43,7 @@ function Item({ location }) {
 
 Item.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  location: PropTypes.object.isRequired,
+  paintings: PropTypes.array.isRequired,
 };
 
 export default Item;

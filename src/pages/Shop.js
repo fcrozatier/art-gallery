@@ -20,6 +20,7 @@ function Shop({ paintings }) {
       {paints.map((painting) => (
         <ArtWork
           key={painting.id}
+          to={`/${painting.id}`}
           // to={{
           //   pathname: `/${painting.id}`,
           //   state: painting,

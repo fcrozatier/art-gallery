@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Item from './pages/Item';
 import Shop from './pages/Shop';
 
-const paintings = require('./Data').default;
+import paintings from './Data';
 
 function App() {
   const cart = [paintings[0], paintings[1]];
@@ -23,7 +23,9 @@ function App() {
           <Route path="/cart" exact>
             <Cart cart={cart} />
           </Route>
-          <Route path="/:id" exact component={Item} />
+          <Route path="/:id" exact>
+            <Item paintings={paintings} />
+          </Route>
         </Switch>
       </Router>
     </>

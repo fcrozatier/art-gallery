@@ -12,7 +12,7 @@ export const NavBar = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background: rgba(0,0,0,0.9);
+  background: #252525;
   color: #fff;
   padding: 0 100px;
 
