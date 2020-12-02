@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   NavBar,
   NavBtn,
@@ -7,7 +8,7 @@ import {
   ShoppingCart,
 } from './Nav.elements';
 
-function Nav() {
+function Nav({ itemsQty }) {
   return (
     <>
       <NavBar>
@@ -16,12 +17,16 @@ function Nav() {
           <NavLink to="/shop">Shop</NavLink>
           <NavBtn to="/cart">
             <ShoppingCart />
-            0
+            {itemsQty}
           </NavBtn>
         </NavLinks>
       </NavBar>
     </>
   );
 }
+
+Nav.propTypes = {
+  itemsQty: PropTypes.number.isRequired,
+};
 
 export default Nav;

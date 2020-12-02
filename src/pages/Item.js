@@ -12,10 +12,14 @@ import {
   Title,
 } from './Item.elements';
 
-function Item({ painting }) {
+function Item({ painting, addItem }) {
   const {
-    title, artist, price, description, img,
+    id, title, artist, price, description, img,
   } = painting;
+
+  const handleClick = () => {
+    addItem(id);
+  };
 
   return (
     <Container>
@@ -28,7 +32,7 @@ function Item({ painting }) {
           $
           {price.toLocaleString('en-US')}
         </Price>
-        <Btn>Add to cart</Btn>
+        <Btn onClick={handleClick}>Add to cart</Btn>
         <MyLink to="/shop">
           <IoIosArrowBack />
           Go back
@@ -41,6 +45,8 @@ function Item({ painting }) {
 Item.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   painting: PropTypes.object.isRequired,
+  // eslint-disable-next-line react/require-default-props
+  addItem: PropTypes.func,
 };
 
 export default Item;

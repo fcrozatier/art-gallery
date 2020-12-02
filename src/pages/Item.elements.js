@@ -15,6 +15,7 @@ export const DisplayImg = styled.img`
   object-position: center top;
   flex-shrink: 1;
   max-width: 50%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 
   @media screen and (max-width: 800px) {
     max-width: 100%;
