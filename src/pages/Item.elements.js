@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
@@ -11,7 +12,6 @@ export const Container = styled.div`
 `;
 
 export const DisplayImg = styled.img`
-  align-self: flex-start;
   object-fit: contain;
   object-position: center top;
   flex-shrink: 1;

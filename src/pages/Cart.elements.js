@@ -28,7 +28,8 @@ export const Footer = styled.footer`
   position: fixed;
   bottom: 0;
   background-color: #fff;
-  border-top: 1px solid black;
+  border-top: 1px solid #CCC;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2)
 `;
 
 export const Invoice = styled.p`

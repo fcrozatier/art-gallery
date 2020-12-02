@@ -27,7 +27,7 @@ export const ArtWork = styled(Link)`
   height: 500px;
   width: ${({ small }) => (small ? '400px' : 'auto')};
   padding: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid #CCC;
   border-radius: 2px;
   transition: transform 300ms ease-in-out;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);

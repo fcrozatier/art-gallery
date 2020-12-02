@@ -14,6 +14,8 @@ import {
 } from './Shop.elements';
 
 function Cart({ cart }) {
+  const total = () => cart.reduce((sum, item) => sum + (item.qty * item.price), 0);
+
   return (
     <>
       <Heading>Shopping cart</Heading>
@@ -21,12 +23,7 @@ function Cart({ cart }) {
         {cart.map((painting) => (
           <Art key={painting.id} small>
             <ImgWrapper>
-              <Link
-                to={{
-                  pathname: `/${painting.id}`,
-                  state: painting,
-                }}
-              >
+              <Link to={`/shop/${painting.id}`}>
                 <ArtImg src={painting.img} alt="artwork" />
               </Link>
             </ImgWrapper>
@@ -44,7 +41,7 @@ function Cart({ cart }) {
         ))}
       </ItemsContainer>
       <Footer>
-        <Invoice>{(15675).toLocaleString('en-US')}</Invoice>
+        <Invoice>{(total()).toLocaleString('en-US')}</Invoice>
         <Checkout>Checkout</Checkout>
       </Footer>
     </>

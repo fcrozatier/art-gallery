@@ -29,8 +29,8 @@ export const MainArtWork = styled.img`
   object-fit: contain;
   object-position: center center;
 
-  border: 1px solid rgba(0,0,0,0.5);
-  border-radius: 4px;
+  border: 1px solid #CCC;
+  border-radius: 2px;
   padding: 30px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 
