@@ -10,7 +10,6 @@ import Shop from './pages/Shop';
 import paintings from './Data';
 
 function App() {
-  // const cart = [paintings[0], paintings[1]];
   const [cart, setCart] = useState([]);
 
   const findItem = (id) => paintings.find((painting) => painting.id === +id);
@@ -18,6 +17,7 @@ function App() {
   const addItem = (id) => {
     const painting = findItem(id);
     const inCart = cart.find((item) => item.id === +id);
+
     if (inCart) {
       setCart(
         [...cart].map((item) => (item.id === id ? { ...item, qty: item.qty + 1 } : item)),
