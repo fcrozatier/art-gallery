@@ -49,12 +49,20 @@ export const NavBtn = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-size: 20px;
+  justify-content: center;
+  position: relative;
+  left: -5px;
 `;
 
 export const ShoppingCart = styled(BsBag)`
   font-size: 30px;
   position: relative;
   top: -2px;
+`;
+
+export const Qty = styled.p`
+  position: absolute;
+  top: 14%;
+  left: 120%;
+  font-size: 20px
 `;

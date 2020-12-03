@@ -37,11 +37,11 @@ export const MainArtWork = styled.img`
   transition: opacity 300ms ease-in-out;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   ${Btn}:hover + & {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
 `;
