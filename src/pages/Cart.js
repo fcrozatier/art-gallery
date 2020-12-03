@@ -73,8 +73,7 @@ Cart.defaultProps = {
 };
 
 Cart.propTypes = {
-  // eslint-disable-next-line react/forbid-prop-types
-  cart: PropTypes.array,
+  cart: PropTypes.arrayOf(PropTypes.object),
   deleteItem: PropTypes.func,
   setItemDelta: PropTypes.func,
 };
