@@ -35,7 +35,7 @@ export const NavIcon = styled(Link)`
 export const NavLinks = styled.div`
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: calc(20px + 2vw);
 `;
 
 export const NavLink = styled(Link)`
@@ -45,12 +45,14 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavBtn = styled(Link)`
-  text-decoration:none;
+  text-decoration: none;
+  cursor: pointer;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-right: 30px;
   left: -5px;
 `;
 
@@ -62,7 +64,7 @@ export const ShoppingCart = styled(BsBag)`
 
 export const Qty = styled.p`
   position: absolute;
-  top: 14%;
-  left: 120%;
+  top: 13%;
+  right: 10%;
   font-size: 20px
 `;
