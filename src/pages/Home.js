@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   Container,
   MainArtWork,
@@ -10,7 +11,7 @@ function Home() {
   return (
     <>
       <Container>
-        <MainBtn to="/shop">Visit gallery</MainBtn>
+        <MainBtn as={Link} to="/shop">Visit gallery</MainBtn>
         <MainArtWork src={mainImg} alt="showcase" />
       </Container>
     </>
