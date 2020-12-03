@@ -37,6 +37,9 @@ export const Quantity = styled.div`
 `;
 
 export const Qty = styled.p`
+  display: flex;
+  justify-content: center;
+  width: 2em;
   padding: 0 10px;
 `;
 
