@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Btn } from './Item.elements';
+import { Btn } from '../Styles';
 import { Container } from './Shop.elements';
 
 export const ItemsContainer = styled(Container)`
@@ -47,7 +47,7 @@ export const MyBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #252525;
 
   font-size: 18px;
   color: white;
@@ -97,7 +97,6 @@ export const Invoice = styled.p`
 
   @media screen and (max-width: 600px){
     transform: translate(0, 0);
-
   }
 `;
 

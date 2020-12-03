@@ -1,8 +1,8 @@
 import { PropTypes } from 'prop-types';
 import { IoIosArrowBack } from 'react-icons/io';
+import { Btn } from '../Styles';
 import {
   Artist,
-  Btn,
   Container,
   Description,
   DescriptionWrapper,

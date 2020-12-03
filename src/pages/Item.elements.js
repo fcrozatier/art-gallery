@@ -65,18 +65,6 @@ export const Price = styled.p`
   margin-bottom: 20px;
 `;
 
-export const Btn = styled.button`
-  background-color: #000;
-  color: white;
-  text-decoration: none;
-  padding: 20px;
-  border: 1px solid #fff;
-  user-select: none;
-  margin-bottom: 30px;
-  outline: none;
-  cursor: pointer;
-`;
-
 export const MyLink = styled(Link)`
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);

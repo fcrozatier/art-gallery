@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components/macro';
+import { Btn } from '../Styles';
 
 export const Container = styled.div`
   display: flex;
@@ -8,19 +8,12 @@ export const Container = styled.div`
   position: relative;
 `;
 
-export const Btn = styled(Link)`
+export const MainBtn = styled(Btn)`
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -45%);
   z-index: 1;
-
-  background-color: #252525;
-  color: white;
-  text-decoration: none;
-  padding: 20px;
-  border: 1px solid #fff;
-  user-select: none;
 `;
 
 export const MainArtWork = styled.img`

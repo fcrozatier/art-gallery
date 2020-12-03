@@ -1,3 +1,6 @@
+import styled, { createGlobalStyle } from 'styled-components';
+
+export default createGlobalStyle`
 html {
   box-sizing: border-box;
   display: flex;
@@ -19,3 +22,16 @@ body {
   margin: 0;
   padding: 0;
 }
+`;
+
+export const Btn = styled.button`
+  background-color: #252525;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid #fff;
+  user-select: none;
+  margin-bottom: 30px;
+  outline: none;
+  cursor: pointer;
+`;
