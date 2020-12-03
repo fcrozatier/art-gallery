@@ -66,11 +66,17 @@ function Cart({ cart, deleteItem, setItemDelta }) {
   );
 }
 
+Cart.defaultProps = {
+  cart: [],
+  deleteItem: () => {},
+  setItemDelta: () => {},
+};
+
 Cart.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  cart: PropTypes.array.isRequired,
-  deleteItem: PropTypes.func.isRequired,
-  setItemDelta: PropTypes.func.isRequired,
+  cart: PropTypes.array,
+  deleteItem: PropTypes.func,
+  setItemDelta: PropTypes.func,
 };
 
 export default Cart;

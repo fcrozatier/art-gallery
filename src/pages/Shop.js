@@ -41,8 +41,12 @@ function Shop({ paintings }) {
   );
 }
 
+Shop.defaultProps = {
+  paintings: [],
+};
+
 Shop.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  paintings: PropTypes.array.isRequired,
+  paintings: PropTypes.array,
 };
 export default Shop;
