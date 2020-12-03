@@ -1,7 +1,17 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import {
-  Art, ItemsContainer, Heading, Footer, Invoice, Checkout,
+  Art,
+  ItemsContainer,
+  Heading,
+  Footer,
+  Invoice,
+  Checkout,
+  MyLink,
+  Amount,
+  Quantity,
+  MyBtn,
+  Qty,
 } from './Cart.elements';
 import {
   ImgWrapper,
@@ -13,8 +23,8 @@ import {
   Price,
 } from './Shop.elements';
 
-function Cart({ cart }) {
-  const total = () => cart.reduce((sum, item) => sum + (item.qty * item.price), 0);
+function Cart({ cart, deleteItem, setItemDelta }) {
+  const total = () => cart.reduce((sum, item) => sum + item.qty * item.price, 0);
 
   return (
     <>
@@ -32,16 +42,24 @@ function Cart({ cart }) {
                 <Title>{painting.title}</Title>
                 <Artist>{painting.artist}</Artist>
               </ArtDescription>
-              <Price>
-                $
-                {painting.price.toLocaleString('en-US')}
-              </Price>
+              <Amount>
+                <Price>
+                  $
+                  {painting.price.toLocaleString('en-US')}
+                </Price>
+                <Quantity>
+                  <MyBtn onClick={() => setItemDelta(painting.id, -1)}>-</MyBtn>
+                  <Qty>{painting.qty}</Qty>
+                  <MyBtn onClick={() => setItemDelta(painting.id, 1)}>+</MyBtn>
+                </Quantity>
+              </Amount>
             </ArtDetails>
+            <MyLink onClick={() => deleteItem(painting.id)}>delete</MyLink>
           </Art>
         ))}
       </ItemsContainer>
       <Footer>
-        <Invoice>{(total()).toLocaleString('en-US')}</Invoice>
+        <Invoice>{total().toLocaleString('en-US')}</Invoice>
         <Checkout>Checkout</Checkout>
       </Footer>
     </>
@@ -51,6 +69,8 @@ function Cart({ cart }) {
 Cart.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   cart: PropTypes.array.isRequired,
+  deleteItem: PropTypes.func.isRequired,
+  setItemDelta: PropTypes.func.isRequired,
 };
 
 export default Cart;

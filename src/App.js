@@ -14,17 +14,31 @@ function App() {
 
   const findItem = (id) => paintings.find((painting) => painting.id === +id);
 
+  const setItemDelta = (id, delta) => {
+    const newCart = cart.map((item) => {
+      if (item.id === id) {
+        const newQty = (item.qty + delta < 0) ? 0 : item.qty + delta;
+        return { ...item, qty: newQty };
+      }
+      return item;
+    });
+    setCart(newCart);
+  };
+
   const addItem = (id) => {
     const painting = findItem(id);
     const inCart = cart.find((item) => item.id === +id);
 
     if (inCart) {
-      setCart(
-        [...cart].map((item) => (item.id === id ? { ...item, qty: item.qty + 1 } : item)),
-      );
+      setItemDelta(id, 1);
     } else {
       setCart([...cart, { ...painting, qty: 1 }]);
     }
+  };
+
+  const deleteItem = (id) => {
+    const newCart = cart.filter((item) => item.id !== id);
+    setCart(newCart);
   };
 
   const itemsQty = () => cart.reduce((sum, item) => sum + item.qty, 0);
@@ -46,7 +60,7 @@ function App() {
             )}
           />
           <Route path="/cart" exact>
-            <Cart cart={cart} />
+            <Cart cart={cart} deleteItem={deleteItem} setItemDelta={setItemDelta} />
           </Route>
         </Switch>
       </Router>
