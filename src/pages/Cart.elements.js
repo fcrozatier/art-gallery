@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Btn } from '../Styles';
 import { Container } from './Shop.elements';
@@ -61,11 +60,11 @@ export const MyBtn = styled.button`
   cursor: pointer;
 `;
 
-export const MyLink = styled(Link)`
-  text-decoration: none;
+export const MyLink = styled.span`
   color: #777;
   justify-self: flex-start;
   margin-top: 10px;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;

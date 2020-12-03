@@ -1,15 +1,19 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 
 export const Container = styled.main`
   display: grid;
+  padding: 50px;
   gap: 30px;
   justify-content: center;
   justify-items: center;
-  grid-template-columns: repeat(
-          ${({ small }) => (small ? 'auto-fill' : 'auto-fit')},
-          minmax(${({ small }) => (small ? '400px' : '500px')}, 1fr));
-  padding: 50px;
+  ${(props) => (props.small
+    ? css`
+          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        `
+    : css`
+          grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        `)};
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -27,7 +31,7 @@ export const ArtWork = styled(Link)`
   height: 500px;
   width: ${({ small }) => (small ? '400px' : 'auto')};
   padding: 30px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 2px;
   transition: transform 300ms ease-in-out;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);

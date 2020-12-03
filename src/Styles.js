@@ -26,12 +26,14 @@ body {
 
 export const Btn = styled.button`
   background-color: #252525;
+  border: 1px solid #fff;
   color: white;
   text-decoration: none;
+
   padding: 20px;
-  border: 1px solid #fff;
-  user-select: none;
   margin-bottom: 30px;
-  outline: none;
+
   cursor: pointer;
+  outline: none;
+  user-select: none;
 `;

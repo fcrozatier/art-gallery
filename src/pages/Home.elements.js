@@ -33,7 +33,7 @@ export const MainArtWork = styled.img`
     opacity: 0.7;
   }
 
-  ${Btn}:hover + & {
+  ${MainBtn}:hover + & {
     opacity: 0.7;
   }
 
